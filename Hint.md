@@ -1,0 +1,6 @@
+## Sentence Reverse Hint
+
+- Even if your language of choice enables that, using standard functions to join the characters into a string, split it and reverse the split words is not efficient. When you do that the compiler/interpreter is using `O(N)` space to create the string,`O(N)` space to hold the split words and additional `O(N)` space to hold the re-joined reversed string. Also, the whole point of this question is to get you roll up your sleeves and do it yourself. Whenever a standard or a library function is used, ask your peer to explain the time and space complexities it take. In your evaluation of your peer’s complexity analysis, take that into account.
+- Watch for edge cases handling in your peer’s solution, e.g. empty array, array with nothing but spaces, array with one word only, multiple spaces between words, etc.
+- To get the maximum rating for problem solving, your peer must achieve a linear time complexity and a constant space complexity with no hints.
+- If you have time left, ask your peer how the `mirrorReverse` function could be implemented with a single index. It’s done with left to right linear iteration and swapping `arr[i]` and `arr[n-1-i]` as long as `i < n-1-i`.
